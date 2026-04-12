@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ホーム画面</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
+        .container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        .user-name { color: #007bff; font-weight: bold; }
+        .logout-btn { display: inline-block; margin-top: 20px; color: red; text-decoration: none; border: 1px solid red; padding: 5px 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 マイページ</h1>
+        <p>✅ ログインに成功しました！</p>
+        
+        <p>ようこそ、<span class="user-name"><%= username %></span> さん</p>
+
+        <hr>
+        <h3>本日のメニュー</h3>
+        <ul>
+            <li><a href="#">自分のプロフィールを見る</a></li>
+            <li><a href="#">新しいメモを書く</a></li>
+        </ul>
+
+        <a href="/login" class="logout-btn">ログアウト</a>
+    </div>
+</body>
+</html>
