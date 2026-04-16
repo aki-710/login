@@ -1,5 +1,196 @@
-pg-study/
-├── .env           # DBの接続情報（秘密の鍵）
-├── db.js          # DB接続の司令塔
-├── init.sql       # 【重要】設計図。GUIにコピペしてテーブルを作る用
-└── app.js         # 実行ファイル（会員登録・ログイン機能）
+├─node_modules
+│  ├─.bin
+│  ├─accepts
+│  ├─bcrypt
+│  │  ├─.github
+│  │  │  └─workflows
+│  │  ├─examples
+│  │  ├─prebuilds
+│  │  │  ├─darwin-arm64
+│  │  │  ├─darwin-x64
+│  │  │  ├─linux-arm
+│  │  │  ├─linux-arm64
+│  │  │  ├─linux-x64
+│  │  │  ├─win32-arm64
+│  │  │  └─win32-x64
+│  │  ├─src
+│  │  └─test
+│  ├─body-parser
+│  │  └─lib
+│  │      └─types
+│  ├─bytes
+│  ├─call-bind-apply-helpers
+│  │  ├─.github
+│  │  └─test
+│  ├─call-bound
+│  │  ├─.github
+│  │  └─test
+│  ├─content-disposition
+│  ├─content-type
+│  ├─cookie
+│  ├─cookie-signature
+│  ├─debug
+│  │  └─src
+│  ├─depd
+│  │  └─lib
+│  │      └─browser
+│  ├─dotenv
+│  │  ├─lib
+│  │  └─skills
+│  │      ├─dotenv
+│  │      └─dotenvx
+│  ├─dunder-proto
+│  │  ├─.github
+│  │  └─test
+│  ├─ee-first
+│  ├─ejs
+│  │  ├─bin
+│  │  └─lib
+│  │      ├─cjs
+│  │      └─esm
+│  ├─encodeurl
+│  ├─es-define-property
+│  │  ├─.github
+│  │  └─test
+│  ├─es-errors
+│  │  ├─.github
+│  │  └─test
+│  ├─es-object-atoms
+│  │  ├─.github
+│  │  └─test
+│  ├─escape-html
+│  ├─etag
+│  ├─express
+│  │  └─lib
+│  ├─express-session
+│  │  ├─node_modules
+│  │  │  ├─cookie-signature
+│  │  │  ├─debug
+│  │  │  │  └─src
+│  │  │  └─ms
+│  │  └─session
+│  ├─finalhandler
+│  ├─forwarded
+│  ├─fresh
+│  ├─function-bind
+│  │  ├─.github
+│  │  └─test
+│  ├─get-intrinsic
+│  │  ├─.github
+│  │  └─test
+│  ├─get-proto
+│  │  ├─.github
+│  │  └─test
+│  ├─gopd
+│  │  ├─.github
+│  │  └─test
+│  ├─has-symbols
+│  │  ├─.github
+│  │  └─test
+│  │      └─shams
+│  ├─hasown
+│  │  └─.github
+│  ├─http-errors
+│  ├─iconv-lite
+│  │  ├─encodings
+│  │  │  └─tables
+│  │  ├─lib
+│  │  │  └─helpers
+│  │  └─types
+│  ├─inherits
+│  ├─ipaddr.js
+│  │  └─lib
+│  ├─is-promise
+│  ├─math-intrinsics
+│  │  ├─.github
+│  │  ├─constants
+│  │  └─test
+│  ├─media-typer
+│  ├─merge-descriptors
+│  ├─mime-db
+│  ├─mime-types
+│  ├─ms
+│  ├─negotiator
+│  │  └─lib
+│  ├─node-addon-api
+│  │  └─tools
+│  ├─node-gyp-build
+│  ├─object-inspect
+│  │  ├─.github
+│  │  ├─example
+│  │  └─test
+│  │      └─browser
+│  ├─on-finished
+│  ├─on-headers
+│  ├─once
+│  ├─parseurl
+│  ├─path-to-regexp
+│  │  └─dist
+│  ├─pg
+│  │  ├─esm
+│  │  └─lib
+│  │      ├─crypto
+│  │      └─native
+│  ├─pg-cloudflare
+│  │  ├─dist
+│  │  ├─esm
+│  │  └─src
+│  ├─pg-connection-string
+│  │  └─esm
+│  ├─pg-int8
+│  ├─pg-pool
+│  │  └─esm
+│  ├─pg-protocol
+│  │  ├─dist
+│  │  ├─esm
+│  │  └─src
+│  │      ├─testing
+│  │      └─types
+│  ├─pg-types
+│  │  ├─lib
+│  │  └─test
+│  ├─pgpass
+│  │  └─lib
+│  ├─postgres-array
+│  ├─postgres-bytea
+│  ├─postgres-date
+│  ├─postgres-interval
+│  ├─proxy-addr
+│  ├─qs
+│  │  ├─.github
+│  │  ├─dist
+│  │  ├─lib
+│  │  └─test
+│  ├─random-bytes
+│  ├─range-parser
+│  ├─raw-body
+│  ├─router
+│  │  └─lib
+│  ├─safe-buffer
+│  ├─safer-buffer
+│  ├─send
+│  ├─serve-static
+│  ├─setprototypeof
+│  │  └─test
+│  ├─side-channel
+│  │  ├─.github
+│  │  └─test
+│  ├─side-channel-list
+│  │  ├─.github
+│  │  └─test
+│  ├─side-channel-map
+│  │  ├─.github
+│  │  └─test
+│  ├─side-channel-weakmap
+│  │  ├─.github
+│  │  └─test
+│  ├─split2
+│  ├─statuses
+│  ├─toidentifier
+│  ├─type-is
+│  ├─uid-safe
+│  ├─unpipe
+│  ├─vary
+│  ├─wrappy
+│  └─xtend
+└─views
