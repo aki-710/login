@@ -1,0 +1,96 @@
+ /*PC向け*/
+ @media (min-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    header {
+        top: 0;
+    }
+
+    .tab {
+        display: flex;
+        border-bottom:solid 1px #333;
+    }
+
+    .tab-item {
+        flex: 1;
+        padding: 12px;
+        background: none;
+        border: none;
+        font-size: 16px;
+        position: relative;
+    }
+
+    .tab-item.active {
+        color: aqua;
+    }
+
+    .tab-item.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: #333;
+    }
+ }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+ }
+
+ body {
+    text-align: center;
+    margin: 5vh;
+    margin-top: 30vh;
+}
+ 
+ h1 {
+    margin-top: 20px;
+    font-size: 8vh;
+    color: #333;
+ }
+
+ .form {
+    margin: 3vh;
+ }
+
+     .tab {
+        display: flex;
+        border-bottom:solid 1px #333;
+    }
+
+    .tab-item {
+        flex: 1;
+        padding: 12px;
+        background: none;
+        border: none;
+        font-size: 16px;
+        position: relative;
+    }
+
+    .tab-item.active {
+        color: #333;
+    }
+
+    .tab-item.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: #333;
+    }
